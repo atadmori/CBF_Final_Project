@@ -58,7 +58,6 @@ x_function <- function(filename) {
   ### Using Visual Recognition from Watson ####
   #############################################
   
-  # IMAGE_API_KEY <- "a778bb82989d69a1a76ae9e26e042744dc9b7fcb"
   IMAGE_API_KEY <- read.table("image_api.txt")
   original.photo <- readJPEG(filename)
   
@@ -97,7 +96,10 @@ x_function <- function(filename) {
     activity_id = 0
   }
   class(latitude)
-  # RICH \|/
+  
+  # End Amer Code
+  # Begin RICH Code
+  
   APIkey <- read.table("weather_api.txt")
   WCurl <- paste0("http://api.weather.com/v1/geocode/", as.character(as.numeric(latitude)), 
                   "/", as.character(as.numeric(longitude)), "/", 
